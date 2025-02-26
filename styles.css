@@ -28,23 +28,13 @@ header div ul{
     display: flex;
     color: white;
     list-style: none;
+    margin : 10px 0
     
 }
 
-a{
-    text-decoration: none;
+header div ul li a{
     color: white;
+    margin: 5px;
 }
 
-a:link{
-    text-decoration: none;
-    color: white;
-}
-a:hover{
-    text-decoration: none;
-    color: white;
-}
-a:active{
-    text-decoration: none;
-    color: white;
-}
+

@@ -1,4 +1,3 @@
-/* Reset and global styles */
 * {
     margin: 0;
     padding: 0;
@@ -17,7 +16,6 @@ h2 {
     margin: 5vh 0;
 }
 
-/* Header */
 header {
     background: #ffffff url(img/lyon.webp) center/cover no-repeat;
     height: 95vh;
@@ -61,7 +59,6 @@ header div p {
     text-align: center;
 }
 
-/* Main content */
 main {
     background-color: white;
 }
@@ -79,6 +76,7 @@ main > article:first-of-type img {
 
 main > article:first-of-type h2 {
     margin-top: 2vh;
+    margin-bottom: 0;
 }
 
 main > article:first-of-type p {
@@ -86,6 +84,7 @@ main > article:first-of-type p {
     line-height: 4vh;
     text-align: center;
 }
+
 
 #Plats {
     display: flex;
@@ -103,7 +102,7 @@ main > article:first-of-type p {
     background-color: whitesmoke;
     padding: 5vw;
     border: 1px solid rgba(81, 79, 79, 0.24);
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
     margin-bottom: 4vh;
     text-align: center;
 }
@@ -114,7 +113,7 @@ main > article:first-of-type p {
 }
 
 .art-plat img {
-    width: 45vw;
+    width: 90%;
     height: 30vh;
     margin: 2vh 0;
     object-fit: cover;
@@ -147,7 +146,6 @@ main > article:first-of-type p {
     width: 65vw;
 }
 
-/* Footer */
 footer {
     background-color: #343131;
     color: white;
@@ -171,4 +169,95 @@ footer > p {
     text-align: center;
     background-color: rgba(29, 28, 28, 0.76);
     padding: 4vh 0;
+}
+
+@media screen and (min-width: 768px){
+
+    header{
+        height: 60vh;
+    }
+
+    header div{
+        background-color: rgba(18, 17, 17, 0.678); 
+    }
+
+    header div ul{
+        margin: 1vh 0;
+    }
+
+    main > article:first-of-type{
+        justify-content: center;
+        align-items: center;
+    }
+
+    main > article:first-of-type img {
+        float: left;
+        width: 20vw;
+        height: 23vh;
+        margin-left:2vw;
+    }
+
+   
+
+    main > article:first-of-type h2 {
+        text-align: left;
+        padding: 8vh 0 0 0;
+        margin : 2vh 0 2vh 30%;
+        
+    }
+    
+    main > article:first-of-type p {
+        margin-left: 30%;
+        padding: 0;
+        line-height: 4vh;
+        text-align: left;
+        
+    }
+
+    #Plats{
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items:stretch;
+    }
+
+    #Plats article:last-child {
+        margin-bottom: 0vh;
+    }
+
+    .art-plat{
+        width: 25vw;
+        padding: 1vw;
+        margin-bottom: 0;
+    }
+
+    .art-plat h3{
+        font-size: 2.5vh;
+        font-weight: 600;
+    }
+
+    main > section:last-of-type {
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+
+    .restaurant img {
+        width: 25vw;
+        height: 40vh;
+        object-fit: cover;
+    }
+
+    .restaurant p{
+        width: 40vw;
+    }
+
+    footer > section {
+        display: flex;
+        justify-content: space-around;
+        font-size: 80%;
+        line-height: 5vh;
+        align-items: center;
+        padding: 2vw 4vw 1vh;
+    }
 }
